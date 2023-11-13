@@ -20,7 +20,8 @@ class RegisterMachine:
             'div': self.div,
             'cdiv': self.cdiv,
             'goto': self.goto,
-            'if goto': self.ifgoto
+            'ifgoto': self.ifgoto,
+            'end': self.end
         }
 
     def run(self):
