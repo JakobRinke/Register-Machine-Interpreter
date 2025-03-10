@@ -1,7 +1,26 @@
+CLOAD 1
+STORE 2
 LOAD 1
-DIV 2
-MUL 2
-STORE 3
-LOAD 1
-SUB 3
-STORE 3
+STORE 10     // Eingabe in 10 Speichern
+LOAD 1       // Schleifenanfang
+IFGOTO 25
+LOAD 10     // Berechenen von k
+SUB 1
+CADD 1    
+STORE 9   // aktuelles k wird in 9 gespeichert
+CMUL 4   // 4 k berechnen
+CADD 2	  // 4k + 2 
+MUL 2    // Mit C_k-1 mulitplizieren
+STORE 8   // wird in 8 gespeichert
+LOAD 9
+CADD 2    // k+2 berechnen
+STORE 7	  // in 7 Speichern
+LOAD 8    // Teilen
+DIV 7     // Teilen
+STORE 2   // Ergebnis speichern
+LOAD 1    // Startzähler Runterzählen
+CSUB 1
+STORE 1
+GOTO 5
+END 0
+END 0
